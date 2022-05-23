@@ -20,19 +20,6 @@ class Dot extends Phaser.GameObjects.Sprite {
       delay: params.delay,
       ease: "Linear",
       duration: 300,
-      onComplete: () => {
-        if (params.callback) {
-          params.callback();
-        }
-      },
     });
-  }
-  remove() {
-    console.log(this);
-    this.x = -500;
-    this.active = false;
-    this.visible = false;
-    this.position.x = -500;
-    this.position.isempty = false;
   }
 }
