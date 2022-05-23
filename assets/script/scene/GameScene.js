@@ -248,7 +248,7 @@ class GameScene extends Phaser.Scene {
       for (let j = this.positionsArray[i].length - 1; j >= 0; j--) {
         if (!this.positionsArray[i][j].dot.visible) {
           if (i === 0) {
-            const value = Phaser.Math.Between(0, config.colors.length - 1);
+            const value = Phaser.Math.Between(0, config.colors.length);
             this.rewriteDada(i, j, value);
           } else {
             const value = this.returnDodwithCol(i, j);
